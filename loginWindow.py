@@ -57,6 +57,7 @@ class LoginWindow(CustomWindow.Window):
                 self.destroy()
                 mainWindow.MainWindow()
             else:
+                # TODO make a difference between wrong credentials and non existent user
                 wrong_credentials_label.grid()
 
         def register():
