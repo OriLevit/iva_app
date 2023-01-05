@@ -13,6 +13,7 @@ class MainWindow(CustomWindow.Window):
         self.center_on_screen(SCREEN_WIDTH, SCREEN_HEIGHT)
         self.configure(background="#525050")
         self.add_widgets(username)
+        self.resizable(False,False)
 
     def add_widgets(self, username):
         menu_frame = tkinter.Frame(self, width=200, height=720, background="#c2a199")
@@ -29,8 +30,12 @@ class MainWindow(CustomWindow.Window):
         main_frame.rowconfigure(1, weight=1)
 
         title_label = tkinter.Label(master=main_frame, text=f"Welcome {username}!")
-        title_label.grid(column=2, row=0, pady=40)
+        title_label.grid(column=2, row=1, pady=40)
         title_label.config(bg="#525050", fg="white", font=("Ariel", 18, "bold"))
+
+        disclaimer_label = tkinter.Label(master=main_frame, text="הנתונים מעודכנים לפי אתר איגוד הכדורעף* ")
+        disclaimer_label.grid(column=0, row=0)
+        disclaimer_label.config(bg="#525050", fg="white", font=("Ariel", 8, "bold"))
 
         leaderboard_frame = tkinter.Frame(main_frame, width=250, height=450, background="#c4d171")
         leaderboard_frame.grid(column=2, row=2, padx=20)
