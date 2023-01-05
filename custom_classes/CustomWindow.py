@@ -5,7 +5,6 @@ class Window(tkinter.Tk):
     def __init__(self):
         super().__init__()
         self.center_on_screen()
-        #self.add_widgets()
         self.add_basics()
 
     def center_on_screen(self, SCREEN_WIDTH=300, SCREEN_HEIGHT=300):
