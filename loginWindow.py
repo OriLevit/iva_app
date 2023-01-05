@@ -27,12 +27,12 @@ class LoginWindow(CustomWindow.Window):
         # endregion
 
         # region labels
-        title_label = tkinter.Label(master=main_frame, text="Login", font=("Ariel", 18, "bold"))
+        title_label = tkinter.Label(master=main_frame, text="Login", font=("Verdana", 18, "bold"))
         title_label.grid(column=1, row=0, pady=15)
         title_label.config(bg="#2b2b2b", fg="white")
 
         wrong_credentials_label = tkinter.Label(master=main_frame, text="Username/Password incorrect!",
-                                                font=("Ariel", 10, "bold"))
+                                                font=("Verdana", 10, "bold"))
         wrong_credentials_label.grid(column=1, row=3, pady=10)
         wrong_credentials_label.config(bg="#2b2b2b", fg="red")
         wrong_credentials_label.grid_remove()
