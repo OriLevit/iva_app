@@ -53,7 +53,7 @@ class RegisterWindow(CustomWindow.Window):
                 database_interaction.add_user(usr, hashed_password)
                 already_exists_label.grid_remove()
                 self.destroy()
-                mainWindow.MainWindow()
+                mainWindow.MainWindow(usr)
 
         # region buttons
         register_button = button.Btn(root=main_frame,

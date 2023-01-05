@@ -55,7 +55,7 @@ class LoginWindow(CustomWindow.Window):
             if database_interaction.check_login(usr, hashed_password):
                 print("Logging in...")
                 self.destroy()
-                mainWindow.MainWindow()
+                mainWindow.MainWindow(usr)
             else:
                 # TODO make a difference between wrong credentials and non existent user
                 wrong_credentials_label.grid()
