@@ -13,7 +13,7 @@ class LoginWindow(CustomWindow.Window):
     def __init__(self):
         super().__init__()
         self.add_widgets()
-        self.resizable(False,False)
+        self.resizable(False, False)
 
     def add_widgets(self):
         # region main frame
